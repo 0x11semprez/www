@@ -51,7 +51,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <style>{
+      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
       `}</style>
 
@@ -59,6 +59,7 @@ export default function Portfolio() {
         style={{ fontFamily: "'IBM Plex Mono', monospace" }}
         className="min-h-screen bg-white text-black selection:bg-black selection:text-white"
       >
+        {/* INTRO */}
         <section className="min-h-screen flex flex-col justify-center px-6 sm:px-12 md:px-24 max-w-3xl">
           <div className="text-sm leading-loose text-neutral-700 max-w-xl">
             <p>0x11semprez's real name is kassim</p>
