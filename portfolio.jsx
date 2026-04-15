@@ -14,9 +14,9 @@ const PROJECTS = [
     link: "https://github.com/0x11semprez/ein-sof",
   },
   {
-    name: "ASA",
+    name: "ASA.",
     description:
-      "B2B SaaS platform for agency teams. Centralized messaging, meeting scheduling, task planning, and collaborative notes. CTO & Solutions Architect.",
+      "B2B SaaS platform for agency teams. Centralized messaging, meeting scheduling, task planning, and collaborative notes. Mac && IOS native. CTO & Solutions Architect. We helped businesses to scale millions dollars.",
     link: "https://asacore.xyz",
   },
 ];
@@ -61,23 +61,20 @@ export default function Portfolio() {
       >
         <section className="min-h-screen flex flex-col justify-center px-6 sm:px-12 md:px-24 max-w-3xl">
           <div className="text-sm leading-loose text-neutral-700 max-w-xl">
-            <p>0x11semprez's real name is kassim</p>
-            <p>kassim is disciplined.</p>
+            <p>semprez's real name is kassim.</p>
+            <p>kassim is a hard worker.</p>
+            <p>kassim hits the GYM.</p>
             <p>kassim likes beretta guns.</p>
             <p>kassim hates people with no critical thinking.</p>
-            <p>kassim likes japan.</p>
+            <p>kassim miss his little cousin.</p>
             <p>kassim likes to suffer.</p>
-            <p>
-              kassim is the son of booba, ateyaba, pnl && clams casino &&
-              partynextdoor.
-            </p>
-            <p>kassim hates the beach unless with his future lover.</p>
-            <p>kassim likes glocks.</p>
+            <p>kassim grew up with pnl && playboi carti && josman && liltjay </p>
             <p>kassim thinks a lot.</p>
             <p>kassim is kind.</p>
             <p>kassim likes ethereum.</p>
             <p>kassim hates to suffer.</p>
             <p>kassim likes basketball.</p>
+            <p>kassim miss his father.</p>
             <p>kassim customizes weapons.</p>
             <p>kassim likes china.</p>
             <p>kassim is blunt.</p>
@@ -85,12 +82,10 @@ export default function Portfolio() {
             <p>kassim likes building projects and starting from scratch.</p>
             <p>kassim is mean.</p>
             <p>kassim likes the usa.</p>
-            <p>
-              kassim has 5 women in his life they are the princesses of his
-              heart.
-            </p>
+            <p>kassim has 5 women in his life they are the princesses of his heart.</p>
             <p>kassim knows and lives with it.</p>
             <p>kassim prays.</p>
+            <p>kassim miss his little sister and his little brother.</p>
           </div>
         </section>
 
