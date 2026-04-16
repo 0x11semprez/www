@@ -114,7 +114,8 @@ function ScreenGlitch() {
 
       // --- GHOST TEXT ---
       if (Math.random() < 0.04) {
-        const txt = GHOST_FRAGMENTS[Math.floor(Math.random() * GHOST_FRAGMENTS.length)];
+        const txt =
+          GHOST_FRAGMENTS[Math.floor(Math.random() * GHOST_FRAGMENTS.length)];
         const gx = Math.random() * w * 0.85;
         const gy = Math.random() * h;
         const size = 8 + Math.random() * 5;
@@ -135,7 +136,11 @@ function ScreenGlitch() {
 
         glitches.current.push({
           type: "text",
-          txt, x: gx, y: gy, size, life: 4 + Math.floor(Math.random() * 10),
+          txt,
+          x: gx,
+          y: gy,
+          size,
+          life: 4 + Math.floor(Math.random() * 10),
         });
       }
 
@@ -146,7 +151,7 @@ function ScreenGlitch() {
         if (g.type === "text") {
           ctx.save();
           ctx.font = `${g.size}px monospace`;
-          ctx.globalAlpha = 0.035 + (g.life * 0.01);
+          ctx.globalAlpha = 0.035 + g.life * 0.01;
           ctx.fillStyle = "#000";
           ctx.fillText(g.txt, g.x + (Math.random() - 0.5) * 3, g.y);
           ctx.restore();
@@ -197,7 +202,8 @@ function ScreenGlitch() {
         ctx.fillStyle = "#000";
         for (let x = 0; x < w; x += 10) {
           if (Math.random() < 0.35) {
-            const c = GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)];
+            const c =
+              GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)];
             ctx.fillText(c, x, bandY + bandH / 2 + 3);
           }
         }
@@ -265,7 +271,7 @@ function CursorEffect() {
     const handleMove = (e) => {
       const speed = Math.sqrt(
         (e.clientX - lastMouse.current.x) ** 2 +
-        (e.clientY - lastMouse.current.y) ** 2
+          (e.clientY - lastMouse.current.y) ** 2,
       );
       lastMouse.current.x = e.clientX;
       lastMouse.current.y = e.clientY;
@@ -285,7 +291,8 @@ function CursorEffect() {
           rgb: Math.random() < 0.3,
         });
       }
-      if (trail.current.length > 120) trail.current.splice(0, trail.current.length - 120);
+      if (trail.current.length > 120)
+        trail.current.splice(0, trail.current.length - 120);
     };
     window.addEventListener("mousemove", handleMove);
 
@@ -302,7 +309,9 @@ function CursorEffect() {
         if (p.life <= 0) return;
 
         const alpha = p.life * 0.7;
-        const dx = isGlitch ? (Math.random() - 0.5) * 80 : p.glitchX * (1 - p.life);
+        const dx = isGlitch
+          ? (Math.random() - 0.5) * 80
+          : p.glitchX * (1 - p.life);
         const dy = p.glitchY * (1 - p.life);
 
         ctx.save();
@@ -365,7 +374,11 @@ function CursorEffect() {
         ctx.fillRect(0, bandY, canvas.width, bandH);
         ctx.font = "10px monospace";
         ctx.fillStyle = `rgba(0,0,0,${0.1 + Math.random() * 0.2})`;
-        ctx.fillText("0x11semprez::", Math.random() * canvas.width, bandY + bandH / 2 + 3);
+        ctx.fillText(
+          "0x11semprez::",
+          Math.random() * canvas.width,
+          bandY + bandH / 2 + 3,
+        );
       }
 
       ctx.restore();
@@ -429,23 +442,22 @@ export default function Portfolio() {
         {/* INTRO */}
         <section className="min-h-screen flex flex-col justify-center px-6 sm:px-12 md:px-24 max-w-3xl">
           <div className="text-sm leading-loose text-neutral-700 max-w-xl">
-            <p>0x11semprez's real name is kassim</p>
-            <p>kassim is disciplined.</p>
+            <p>semprez's real name is kassim.</p>
+            <p>kassim is a hard worker.</p>
+            <p>kassim hits the GYM.</p>
             <p>kassim likes beretta guns.</p>
             <p>kassim hates people with no critical thinking.</p>
-            <p>kassim likes japan.</p>
+            <p>kassim miss his little cousin.</p>
             <p>kassim likes to suffer.</p>
             <p>
-              kassim is the son of booba, ateyaba, pnl && clams casino &&
-              partynextdoor.
+              kassim grew up with pnl && playboi carti && josman && liltjay{" "}
             </p>
-            <p>kassim hates the beach unless with his future lover.</p>
-            <p>kassim likes glocks.</p>
             <p>kassim thinks a lot.</p>
             <p>kassim is kind.</p>
             <p>kassim likes ethereum.</p>
             <p>kassim hates to suffer.</p>
             <p>kassim likes basketball.</p>
+            <p>kassim miss his father.</p>
             <p>kassim customizes weapons.</p>
             <p>kassim likes china.</p>
             <p>kassim is blunt.</p>
@@ -457,9 +469,9 @@ export default function Portfolio() {
               kassim has 5 women in his life they are the princesses of his
               heart.
             </p>
-            <p>0x11semprez is called kassim.</p>
             <p>kassim knows and lives with it.</p>
             <p>kassim prays.</p>
+            <p>kassim miss his little sister and his little brother.</p>
           </div>
         </section>
 
