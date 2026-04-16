@@ -16,7 +16,7 @@ const PROJECTS = [
   {
     name: "ASA",
     description:
-      "B2B SaaS platform for agency teams. Centralized messaging, meeting scheduling, task planning, and collaborative notes. CTO & Solutions Architect.",
+      "B2B SaaS platform for agency teams. Mac && IOS native. Centralized messaging, meeting scheduling, task planning, collaborative notes, custom KPIs and sales tracking. CTO & Solution Architect. Helped businesses in achieving a turnover of 7 figures.",
     link: "https://asacore.xyz",
   },
 ];
@@ -482,9 +482,8 @@ export default function Portfolio() {
           </p>
 
           <p className="mt-12 text-sm sm:text-base text-neutral-700 leading-relaxed max-w-xl">
-            // cloud architect and systems engineer. rust, go, solidity, c. i
-            design infrastructure that scales and contracts that execute. no
-            abstractions without purpose.
+            // solution architect and zk engineer. i design infrastructure that
+            scales and contracts that execute. no abstractions without purpose.
           </p>
         </section>
 
